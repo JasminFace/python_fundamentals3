@@ -27,3 +27,9 @@ people = {
     "Dylan": 26,
     "Mollin": 24,
     }
+
+print(coin_flip)
+print(fav_colours[0])
+print(sorted(age))
+age.append(0)
+print(movies.get("The Lion King"))
