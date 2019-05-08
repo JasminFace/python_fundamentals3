@@ -6,26 +6,26 @@ fav_artist = ["Simple Plan", "Bruno Mars", "Carly Rae Jepsen"]
 words = {
     "cheesy": "Things done or said to make someone feel special",
     "Cloud": "My dog",
-    "Kuya": "My brother",
+    "Kuya": "My brother"
     }
 
 movies = {
     "The Lion King": 1994,
     "Isn't It Romantic": 2019,
-    "Deadpool": 2016,    
+    "Deadpool": 2016   
 }
 
 cities = {
     "Winnipeg": 749534,
     "Steinbach": 15829,
-    "Toronto": 2930000,
+    "Toronto": 2930000
 }
 
 people = {
     "Jasmin": 28,
     "Jeannine": 27,
     "Dylan": 26,
-    "Mollin": 24,
+    "Mollin": 24
     }
 
 #EXERCISE 1
@@ -42,3 +42,13 @@ coin_flip.sort(reverse=True)
 print(cities.get("Steinbach"))
 for artist in fav_artist:
     print(f"{artist} is DA BOMB!")
+
+#EXERCISE 3
+print(fav_artist[0])
+print(fav_artist[1])
+for movie, date in movies.items():
+    print(f"{movie} was released in {date}.")
+age.sort(reverse=True)
+print(sorted(age))
+movies["Beauty and the Beast"] = 1991, 2017
+print(movies["Beauty and the Beast"])
