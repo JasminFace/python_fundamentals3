@@ -28,8 +28,17 @@ people = {
     "Mollin": 24,
     }
 
+#EXERCISE 1
 print(coin_flip)
 print(fav_colours[0])
 print(sorted(age))
 age.append(0)
 print(movies.get("The Lion King"))
+
+#EXERCISE 2
+print(fav_colours[-1])
+cities["Los Angeles"] = 4000000
+coin_flip.sort(reverse=True)
+print(cities.get("Steinbach"))
+for artist in fav_artist:
+    print(f"{artist} is DA BOMB!")
