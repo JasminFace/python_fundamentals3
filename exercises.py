@@ -51,4 +51,79 @@ for movie, date in movies.items():
 age.sort(reverse=True)
 print(sorted(age))
 movies["Beauty and the Beast"] = 1991, 2017
-print(movies["Beauty and the Beast"])
+print(list(movies.items())[-1])
+
+#EXERCISE 4
+for num in age: 
+    if num > 25: 
+        print (num)
+
+age.sort()
+print(age[-1])
+
+print(coin_flip.count("heads"))
+fav_artist.remove("Carly Rae Jepsen")
+cities["Toronto"] = 2930001 
+
+#EXERCISE 5
+sum(cities.values())
+
+
+for person, age in people.items():
+    if (age > 27): 
+        print(f"{person} is old.")
+    else:
+        print(f"{person} is young.")
+
+print(fav_colours[-2], fav_colours[-1])
+
+for num in age: 
+    print(num + 1)
+
+
+fav_colours.append("chartreuse")
+fav_colours.append("teal")
+
+#EXERCISE 6
+more_movies = {
+    1999: ["The Matrix", "Star Wars: Episode 1", "The Mummy"]
+    2009: ["Avatar", "Star Trek", "District 9"]
+    2019: ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]
+}
+
+phone = [[1,2,3], [4,5,6], [7,8,9,], ["*", 0, "#"]]
+
+countries = [
+    {"name": "Canada", "continent": "North America", "island": False}, {"name": "Philippines", "continent": "Asia", "island": True}, {"name": "Paraguay", "continent": "South America", "island": False}
+]
+
+#EXERCISE 7
+print("I will not skateboard in the halls " * 20)
+
+
+det = []
+def skate ():
+    lines = 0
+    while lines < 20:
+        print("I will not skateboard in the halls")
+        lines += 1
+        det.append("I will not skateboard in the halls")
+skate()
+
+
+numbers = []
+for n in range(1,51):
+    print(n)
+    numbers.append(n)
+
+sum = 0
+for n in numbers:
+    sum = sum + n
+print(sum)
+
+new_numbers = []
+for n in range(1,51):
+    print(n)
+    print(n)
+    print(n)
+    new_numbers.append(n)
