@@ -141,3 +141,59 @@ expenses = [250, 7.95, 30.95, 16.50]
 more_expenses = [146.78, 22.22, 99.00, 1]
 print(sum(expenses))
 print(sum(more_expenses))
+
+#EXERCISE 9
+grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+
+def list():
+    for item in grocery_list:
+        print(f"*{item}")
+    
+    if item == "bananas":
+        print("You don't need to pick up bananas today")
+    else:
+        print("You need to pick up bananas")
+
+grocery_list.append("rice")
+list()
+
+print(len(grocery_list))
+
+print(grocery_list[1])
+
+grocery_list.sort()
+list()
+
+grocery_list.remove("salmon")
+list()
+
+#EXERICSE 10
+students = {
+  'cohort1': 34,
+  'cohort2': 42,
+  'cohort3': 22
+}
+
+def display():
+    for key, value in students.items():
+        print(f"{key}: {value:.0f} students")
+display()
+
+students["cohort4"] = 43
+print(students)
+
+print(students.keys())
+
+def expanded():
+    for cohort, num in students.items():
+        size = num * 1.05
+        print(int(size))
+expanded()
+
+del students["cohort2"]
+print(students)
+
+total = 0
+for cohort, num in students.items():
+    total += num
+print(total)
