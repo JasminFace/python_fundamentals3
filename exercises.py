@@ -197,3 +197,33 @@ total = 0
 for cohort, num in students.items():
     total += num
 print(total)
+
+#EXERCISE 11
+
+range = range(1, 101)
+def bitmaker():
+    for number in range:
+        if number % 3 == 0 and number % 5 == 0:
+            print("BitMaker")
+        elif number % 3 == 0:
+            print("Bit")
+        elif number % 5 == 0:
+            print("Maker")
+        else:
+            print(number)
+
+bitmaker()
+
+#EXERCISE 12
+
+def pizzas():
+    pizza_num = 0
+    print("How many pizzas do you want to order?")
+    pizza_quantity = int(input())
+    for pizza in range(pizza_quantity):
+        pizza_num += 1
+        print(f"How many toppings for pizza {pizza_num}?")
+        topping_quantity = int(input())
+        print(f"You have ordered a pizza with {topping_quantity} toppings")
+
+pizzas()
